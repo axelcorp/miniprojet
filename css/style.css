@@ -49,7 +49,7 @@ body{background-color: black;max-height:600px;}
 #presentation {font-size:1.5vm;  position:relative; top:0vh; display:none;}
 #titre2 {font-size:1.5vm;position:relative; top:0vh;}
 #resum2 {font-size:1.5vm; position:relative; top:0vh; }
-#presentation2 {font-size:3vm;  position:relative; top:0vh; display:none;}
+#presentation2 {font-size:1.5vm;  position:relative; top:0vh; display:none;}
 article{position:relative;top:0vh;font-size:1.5vm;}
 
 /*pieds*/
