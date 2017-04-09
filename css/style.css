@@ -1,0 +1,114 @@
+
+
+@keyframes nomAnim2{
+     from { opacity:0; }    
+	 42%    { opacity:0; }
+	 50%	{ opacity:1; }
+	 58%    { opacity:0; }
+	 to   { opacity:0; }
+}
+
+@font-face {
+    font-family: "Ma Super Fonte";
+    font-weight: bold;
+    src: url('GUERRILLA.otf');
+}
+@font-face {
+    font-family: "Ma Super Fonte2";
+    font-weight: bold;
+    src: url('GUERRILLA.otf');
+}
+
+/*haut*/
+h1{font-family:Ma Super Fonte2;font-size:4vw;position:absolute;left:20vw;color:pink;}
+#logo{ position:absolute;width: 15vw;box-shadow: unset; heigth:15vh; top: 3%;
+animation: nomAnim2 10s ;animation-iteration-count: infinite;}
+#banniere {position:absolute;width: 99vw; box-shadow: unset; top: 0%; z-index:-1; }
+
+/*texte deco*/
+#texte{display:hidden;position:absolute;color: pink;font-family:"Ma Super Fonte";font-style: bold;font-size:5vh;width: 15vw;text-align:center;top: 35vh	}
+
+/* propriétés des boutons du menu*/
+#boutons{position:fixed; left:20vw; top:25vh;width:75vw;height:15vh;background-color: silver;z-index:1}
+#boutons ul li{  display: inline-block;margin: 1vmax 3vmax 0 0;  }
+#boutons a:hover {color: #000; background: #fff;}
+#boutons ul li ul{position: absolute;display: none;}
+#boutons ul li:hover ul{display:block; width:120px; color:white; text-decoration:none; }
+#boutons ul li ul a{font-size:2vh; white-space:nowrap;}
+a{font-family:"Ma Super Fonte2";margin: 0 0 0 0.5vw;font-size:2vw;color:black;text-decoration: none;}
+
+/*cadre*/
+#imageaccueil{height:40vh;box-shadow: 8px 8px 12px #aaa; position:fixed; top: 40vh; left:22vw;}
+h2{font-size:3vh;margin-bottom:1vh;}
+h2.page1:hover{cursor:pointer;}
+body{background-color: black;max-height:600px;}
+#cadre{position:fixed; left:20vw; top:25vh;width:75vw;height:65vh;background-color: silver;overflow:auto;}
+#corps2{position:absolute;left:20vw;top:21vh;width:50vw;height:20hw;font-size:2vh;text-align: justify;}
+#titre1 {font-size:1.5vm;position:relative; top:0vh;}
+#resum {font-size:1.5vm; position:relative; top:0vh; }
+#presentation {font-size:1.5vm;  position:relative; top:0vh; display:none;}
+#titre2 {font-size:1.5vm;position:relative; top:0vh;}
+#resum2 {font-size:1.5vm; position:relative; top:0vh; }
+#presentation2 {font-size:1.5vm;  position:relative; top:0vh; display:none;}
+article{position:relative;top:0vh;font-size:1.5vm;}
+
+/*pieds*/
+#pieds{color:white;position:fixed;right:70vw; bottom:2vh;font-size:3vh}
+#pieds2{color:white;position:fixed;right:10vw; bottom:2vh;font-size:2vh}
+
+/*formulaire contact*/
+input.number{font-size:2vh;border:none;background-color:transparent;width:10%;border:none;background-color:transparent;}
+input.coordonnées{width:50%;}
+label {width: 40%;font-size:3vh;display: inline-block;vertical-align: top;}
+#map{width:40%;height:40%;position: absolute;left:40vw;top:20vh;}
+td{border:1px solid black; background:white;}
+
+#refresh {position:absolute; right:4vw;top:20vh;z-index:2;color:white;z-index:3;}
+
+#date{color: white; position: relative; bottom: -80%;left 1%;}
+canvas{position:absolute; top:30vh; left:50vw}
+
+ @media screen and (max-width: 724px) {
+	 #texte{display:none;}
+	 canvas{display:none;}
+	 #map{width:90%;position: absolute;left:5vw;top:40vh;}
+	 a{font-size:3vh}
+	 #body{max-height:90000}
+	 #logo {display:none}
+	 #logo2{display:none}
+	 a.pieds{position: absolute; bottom:3vh; }
+	 #date{position: absolute; top:15vh; font-size:2vh;}
+	 #boutons{left:0vw; top:0vh; width:80vw;height:auto;position:absolute;z-index:2;}
+	 h1{font-size:5vh;}
+	 #boutons ul li{font-size:1;display:block;}
+	 #boutons ul li:hover ul{display:inline-block;}
+	#largeur{display:none;}
+	#hauteur{display:none;}
+	#cadre{position:absolute; left:5vw; top:20vh;width:90vw;height:70vh;background-color: silver;overflow:auto;z-index:2;}
+	#corps2{position:absolute;left:10vw;top:90vh;width:65vw;font-size:2vh;z-index:3;}
+	#banniere{height:20vh;width:unset}
+	#imageaccueil{position:absolute; left:10vw; top:30vh;}
+	#refresh {position:absolute; right:10vw;top:17vh;z-index:2;color:white;z-index:3;}
+
+ }
+ @media print {
+	 h1{}
+	 #banniere{}
+	 #texte{display:none;font-size:5vmax;}
+	 ul {display:none;}
+	 #boutons{display:none;}
+	 #logo {display:none;}
+	 #logo2{display:none;}
+	 #impression{display:none;}
+	 a.pieds{display:none;}
+	 #date{display:none;}
+	 #imageaccueil{width:30vw;box-shadow: unset; position:fixed; top: 10vh; left:0vw;}
+#cadre{position:absolute; left:40vw; top:10vh;width:50vw;height:95vh;background-color: silver;overflow:hidden;}
+#corps2{position:absolute;left:0vw;top:0vh;width:45vw;font-size:2vh;}
+#pieds{display:none;}
+#pieds2{left:0vw;}
+
+ }
+  
+
+ 
